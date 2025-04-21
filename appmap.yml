@@ -1,6 +1,0 @@
-appmap_dir: tmp/appmap
-language: python
-name: bedrock-chat-v3
-packages:
-- path: tests
-- path: app
