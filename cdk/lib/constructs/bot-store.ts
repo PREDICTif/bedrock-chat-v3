@@ -48,7 +48,7 @@ export class BotStore extends Construct {
       }
     );
 
-    const standbyReplicas = false;
+    const standbyReplicas = "DISABLED";
       // props.useStandbyReplicas === true ? "ENABLED" : "DISABLED";
 
     const networkPolicy = new oss.CfnSecurityPolicy(this, "NetworkPolicy", {

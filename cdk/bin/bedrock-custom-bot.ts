@@ -86,8 +86,8 @@ const baseConfig: BaseConfig = {
   ownerUserId: params.pk,
   botId: params.sk.split("#")[1],
   documentBucketName: params.documentBucketName,
-  useStandbyReplicas: false,
-    // params.useStandByReplicas === true,
+  useStandbyReplicas:
+    params.useStandByReplicas === true,
 };
 
 const knowledgeConfig: KnowledgeConfig = {

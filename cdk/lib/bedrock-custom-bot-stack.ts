@@ -87,10 +87,10 @@ export class BedrockCustomBotStack extends Stack {
     if (props.existKnowledgeBaseId == undefined) {
       const vectorCollection = new VectorCollection(this, "KBVectors", {
         collectionName: `kb-${props.botId.slice(0, 20).toLowerCase()}`,
-        standbyReplicas: VectorCollectionStandbyReplicas.DISABLED,
-          // props.useStandbyReplicas === true
-          //   ? VectorCollectionStandbyReplicas.ENABLED
-          //   : VectorCollectionStandbyReplicas.DISABLED,
+        standbyReplicas:
+          props.useStandbyReplicas === true
+            ? VectorCollectionStandbyReplicas.ENABLED
+            : VectorCollectionStandbyReplicas.DISABLED,
       });
       const vectorIndex = new VectorIndex(this, "KBIndex", {
         collection: vectorCollection,

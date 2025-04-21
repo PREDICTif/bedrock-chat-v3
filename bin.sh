@@ -49,7 +49,7 @@ BEDROCK_REGION="us-east-1"
 CDK_JSON_OVERRIDE="{}"
 # REPO_URL="https://github.com/aws-samples/bedrock-chat.git"
 REPO_URL="https://github.com/PREDICTif/bedrock-chat-v3.git"
-VERSION="v3"
+VERSION="main"
 ENABLE_RAG_REPLICAS="false"
 
 # Parse command-line arguments for customization
